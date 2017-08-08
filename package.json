@@ -1,0 +1,10 @@
+{
+    "name": "@types/koa-json-body",
+    "description": "TypeScript definitions for Koa Json Body",
+    "license": "MIT",
+    "typeScriptVersion": "2.0",
+    "dependencies": {
+        "@types/co-body": "*"
+    },
+    "version": "0.0.1"
+}
