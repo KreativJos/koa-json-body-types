@@ -6,7 +6,17 @@
 import * as CoBody from 'co-body';
 import * as Koa from 'koa';
 
+/**
+ * 
+ */
 declare namespace KoaJsonBody {
+    /**
+     * 
+     * 
+     * @export
+     * @interface Options
+     * @extends {CoBody.Options}
+     */
     export interface Options extends CoBody.Options {
         /**
          * When set to true, ctx.request.body will always contain {} upon missing or invalid payloads.
@@ -18,8 +28,13 @@ declare namespace KoaJsonBody {
         fallback?: boolean;
     }
 
+    /**
+     * 
+     */
     export interface ParseMiddleware {
         (opts?: Options): Koa.Middleware
     }
 }
 
+declare var parse: KoaJsonBody.ParseMiddleware;
+export = parse;
